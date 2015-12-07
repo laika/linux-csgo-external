@@ -8,10 +8,10 @@ all: bin/cheat
 bin:
 	-mkdir bin
 
-bin/%.o: src/%.cpp 
-	$(CXX) $(CXXFLAGS) -c -Iinclude $< -o $@
+bin/%.o: bin src/%.cpp 
+	$(CXX) $(CXXFLAGS) -c -Iinclude src/$*.cpp -o $@
 
-bin/cheat: bin/log.o bin/remote.o bin/netvar.o bin/hack.o bin/main.o
+bin/cheat: bin bin/log.o bin/remote.o bin/netvar.o bin/hack.o bin/main.o
 	$(CXX) $(CXXFLAGS) -Iinclude -Lbin bin/*.o -o $@
 
 clean:
