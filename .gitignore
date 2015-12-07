@@ -1,10 +1,4 @@
-CMakeFiles/*
-.idea/*
-cmake_install.cmake
-*.txt
-!CMakeLists.txt
-!nologs-branch.md
-*.log
-Makefile
-lolpls
-csgo_external
+bin/*
+.idea/
+*.ipr
+*.ipj
