@@ -12,7 +12,7 @@ void Radar(remote::Handle* csgo, remote::MapModuleMemoryRegion* client, void* en
         cachedSpottedAddress = netvar::GetOffset("CBaseEntity", "m_bSpotted");
     }
 
-    // shithub test
+    // test
     if (cachedSpottedAddress == -1)
         return;
 
