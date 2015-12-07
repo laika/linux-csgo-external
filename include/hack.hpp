@@ -1,8 +1,8 @@
 #pragma once
 
 #include <stddef.h>
-#include "remote.hpp"
-#include "log.hpp"
+#include <remote.hpp>
+#include <log.hpp>
 
 #define TEAM_SPECTATOR          1
 

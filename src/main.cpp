@@ -1,8 +1,8 @@
 #include <iostream>
-#include "log.hpp"
-#include "remote.hpp"
-#include "hack.hpp"
-#include "netvar.hpp"
+#include <log.hpp>
+#include <remote.hpp>
+#include <hack.hpp>
+#include <netvar.hpp>
 
 using namespace std;
 

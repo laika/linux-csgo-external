@@ -1,5 +1,5 @@
-#include "hack.hpp"
-#include "netvar.hpp"
+#include <hack.hpp>
+#include <netvar.hpp>
 
 struct iovec g_remote[1024], g_local[1024];
 struct hack::GlowObjectDefinition_t g_glow[1024];

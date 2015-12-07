@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "remote.hpp"
+#include <remote.hpp>
 
 namespace netvar {
     struct prop_t {

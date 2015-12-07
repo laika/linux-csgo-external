@@ -1,4 +1,4 @@
-#include "netvar.hpp"
+#include <netvar.hpp>
 
 using namespace std;
 
