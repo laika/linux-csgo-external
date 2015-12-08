@@ -7,6 +7,42 @@ struct hack::GlowObjectDefinition_t g_glow[1024];
 int cachedSpottedAddress = -1;
 int count = 0;
 
+void DisableFlashBang(remote::Handle* csgo, remote::MapModuleMemoryRegion* client, void* ent) {
+
+    int durationOffset  = -1;
+    int alphaOffset     = -1;
+    {
+        durationOffset    = netvar::GetOffset("CCSPlayer", "m_FlFlashDuration");
+        alphaOffset       = netvar::GetOffset("CCSPlayer", "m_FlFlashMaxAlpha");
+    }
+
+
+    if (durationOffset != -1) {
+        float duration = 0.0F;
+        csgo->Write((void*) ((unsigned long) ent + durationOffset), &duration, sizeof(float));
+    }
+
+    if (alphaOffset != -1) {
+        float alpha    = 0.0F;
+        csgo->Write((void*) ((unsigned long) ent + alphaOffset), &alpha, sizeof(float));
+    }
+}
+
+void DisableRecoil(remote::Handle* csgo, remote::MapModuleMemoryRegion* client, void* ent) {
+
+    int recoilOffset      = -1;
+    {
+        recoilOffset = netvar::GetOffset("CCSPlayer", "m_vecPunch");
+    }
+
+    if (recoilOffset != -1) {
+        float recoil = 0;
+        csgo->Write((void*) ((unsigned long) ent + recoilOffset), &recoil, sizeof(float));
+    }
+
+
+}
+
 void Radar(remote::Handle* csgo, remote::MapModuleMemoryRegion* client, void* ent, hack::Entity* entity) {
     if (cachedSpottedAddress == -1) {
         cachedSpottedAddress = netvar::GetOffset("CBaseEntity", "m_bSpotted");

@@ -125,6 +125,8 @@ int main() {
     while (csgo.IsRunning()) {
         hack::Glow(&csgo, &client, addressOfGlowPointer);
 
+
+
         usleep(5000);
     }
 
