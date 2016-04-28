@@ -4,9 +4,8 @@ linux-csgo-external
 Linux x86 cheat for x86 and x64 linux systems
 
 Compiled and tested on:
-- Debian 8.2 (Stable)
-- Debian (Testing)
-- Debian (Sid)
+- Debian 8.2 (Jessie), Testing (Stretch), and Unstable (Sid)
+- Ubuntu 15.10 and 16.04 
 
 ![hackin](http://i.imgur.com/fiKLjnQ.jpg)
 
