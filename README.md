@@ -1,10 +1,6 @@
 linux-csgo-external
 ===================
 
-As of this commit (29 Oct 2016) this fork of the cheat is no longer working. Please refer to either of the below repos for similar projects
-- https://github.com/McSwaggens/linux-csgo-external
-- https://github.com/McSwaggens/AimTux
-
 Linux x86 cheat for x86 and x64 linux systems
 
 Compiled and tested on:
